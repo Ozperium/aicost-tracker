@@ -1,0 +1,19 @@
+{
+  "name": "@ozperium/aicost-tracker",
+  "version": "0.1.0",
+  "description": "Local-first CLI to track AI token usage and costs across projects",
+  "main": "dist/index.js",
+  "bin": { "aicost": "dist/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": ["ai", "cost", "tracking", "tokens", "cli", "local-first", "openai", "anthropic", "ollama"],
+  "author": "Ozperium",
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "files": ["dist/", "README.md", "LICENSE"],
+  "devDependencies": { "typescript": "^5.4.0", "@types/node": "^20.0.0" },
+  "engines": { "node": ">=18" }
+}
