@@ -72,6 +72,16 @@ All data is stored locally at `~/.aicost/usage.jsonl` — one JSON entry per lin
 - **Multi-model** — supports OpenAI, Anthropic, Google, and local models
 - **Portable data** — JSONL format, easy to export or analyze
 
+## Part of the AI Dev Workflow Stack
+
+AICostTracker is one tool in a three-part observability stack for AI development:
+
+| Tool | What it does | Install |
+|------|-------------|---------|
+| **[AgentSpec](https://github.com/Ozperium/agentspec)** | Test AI agent behavior — catch regressions before production | `npm i -g @ozperium/agentspec` |
+| **AICostTracker** | Track token usage and costs across projects | `npm i -g @ozperium/aicost-tracker` |
+| **[quota](https://github.com/Ozperium/quota)** | Monitor AI rate limits — know what's left before it stops you | `npm i -g @ozperium/quota` |
+
 ## License
 
 MIT
