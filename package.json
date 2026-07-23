@@ -9,7 +9,7 @@
     "dev": "tsc --watch",
     "prepublishOnly": "tsc"
   },
-  "keywords": ["ai", "cost", "tracking", "tokens", "cli", "local-first", "openai", "anthropic", "ollama"],
+  "keywords": ["ai", "cost", "tracking", "tokens", "cli", "local-first", "openai", "anthropic", "claude", "ollama", "gpt-4o", "api-cost", "budget", "llm"],
   "author": "Ozperium",
   "license": "MIT",
   "publishConfig": { "access": "public" },
