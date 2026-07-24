@@ -10,6 +10,36 @@ Know exactly how much you're spending on AI APIs. No cloud, no account, no telem
 npm install -g @ozperium/aicost-tracker
 ```
 
+### Auto-logging (recommended)
+
+Install as a library and wrap your AI client — every call is logged automatically:
+
+```bash
+npm install @ozperium/aicost-tracker
+```
+
+```js
+import OpenAI from 'openai';
+import { track } from '@ozperium/aicost-tracker';
+
+const openai = track(new OpenAI(), { project: 'myapp' });
+
+// All calls now auto-logged — no manual logging needed
+const response = await openai.chat.completions.create({ model: 'gpt-4o', messages: [...] });
+```
+
+Works with Anthropic too:
+
+```js
+import Anthropic from '@anthropic-ai/sdk';
+import { track } from '@ozperium/aicost-tracker';
+
+const anthropic = track(new Anthropic(), { project: 'myapp' });
+const response = await anthropic.messages.create({ model: 'claude-3-5-sonnet-20241022', ... });
+```
+
+### Manual logging (CLI)
+
 Log an API call:
 
 ```bash
