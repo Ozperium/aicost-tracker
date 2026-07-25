@@ -2,6 +2,10 @@
 
 > Local-first CLI to track AI token usage and costs across projects
 
+[![npm version](https://img.shields.io/npm/v/@ozperium/aicost-tracker)](https://www.npmjs.com/package/@ozperium/aicost-tracker)
+[![npm downloads](https://img.shields.io/npm/dw/@ozperium/aicost-tracker)](https://www.npmjs.com/package/@ozperium/aicost-tracker)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Know exactly how much you're spending on AI APIs. No cloud, no account, no telemetry. Just a simple CLI that logs your token usage and shows you the cost breakdown.
 
 ## Quick start
