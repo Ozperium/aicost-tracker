@@ -29,7 +29,10 @@ import { track } from '@ozperium/aicost-tracker';
 const openai = track(new OpenAI(), { project: 'myapp' });
 
 // All calls now auto-logged — no manual logging needed
-const response = await openai.chat.completions.create({ model: 'gpt-4o', messages: [...] });
+const response = await openai.chat.completions.create({
+  model: 'gpt-4o',
+  messages: [{ role: 'user', content: 'Summarize this document.' }],
+});
 ```
 
 Works with Anthropic too:
@@ -39,7 +42,11 @@ import Anthropic from '@anthropic-ai/sdk';
 import { track } from '@ozperium/aicost-tracker';
 
 const anthropic = track(new Anthropic(), { project: 'myapp' });
-const response = await anthropic.messages.create({ model: 'claude-3-5-sonnet-20241022', ... });
+const response = await anthropic.messages.create({
+  model: 'claude-3-5-sonnet-20241022',
+  max_tokens: 256,
+  messages: [{ role: 'user', content: 'Summarize this document.' }],
+});
 ```
 
 ### Manual logging (CLI)
