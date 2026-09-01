@@ -3,6 +3,8 @@ import { logUsage, readAllUsage, readUsageByProject, clearUsage } from './store'
 import { summarize, formatSummary } from './summary';
 import { listModels } from './pricing';
 
+const { version } = require('../package.json') as { version: string };
+
 function printHelp(): void {
   console.log(`
   aicost — Local-first AI cost tracker
@@ -84,7 +86,7 @@ async function main() {
     }
 
     case 'version': {
-      console.log('aicost v0.1.0');
+      console.log(`aicost v${version}`);
       break;
     }
 
