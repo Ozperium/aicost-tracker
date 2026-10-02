@@ -16,6 +16,8 @@ npm install -g @ozperium/aicost-tracker
 
 ### Auto-logging (recommended)
 
+For a step-by-step OpenAI and Anthropic setup, read the [auto-logging walkthrough on DEV](https://dev.to/pawfromoz/stop-manually-logging-your-ai-api-calls-one-line-auto-logging-for-openai-and-anthropic-1b5m).
+
 Install as a library and wrap your AI client — every call is logged automatically:
 
 ```bash
